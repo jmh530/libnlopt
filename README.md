@@ -1,5 +1,6 @@
 #libnlopt
-**Bindings to nlopt for the D programming language**
+**Bindings to [nlopt](http://ab-initio.mit.edu/wiki/index.php/NLopt) for the D 
+programming language**
 
 ---
 
