@@ -28,7 +28,7 @@ These are built using MSVC 2013 Community and there might be issues if using
 other versions.
 
 Add the directory of the relevant dll/lib for the appropriate architecture to
-the system path. An alternatie would be to register the dll.
+the system path. An alternative would be to register the dll.
 
 This library should then just work. 
 
