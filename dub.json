@@ -1,0 +1,31 @@
+{
+	"name" : "libnlopt",
+	"description": "Bindings to nlopt for the D programming language",
+	"authors": ["John Michael Hall"],
+	"license": "LGPL-2.1 or later",
+	"copyright": "Copyright © 2016, John Michael Hall",
+	"dependencies" : {
+	},
+	"version": "0.2.0",
+	
+	"sourceFiles-windows-x86-dmd": ["lib/win32/nlopt.lib"],
+	"sourceFiles-windows-x86_64": ["lib/win64/nlopt.lib"],
+	
+	"libs-posix": ["nlopt"],
+	
+	"dflags-windows-x86-dmd": ["-m32mscoff"],
+	
+	"configurations": [
+		{
+			"name": "libnlopt-library",
+			"targetType": "library",
+			"version": ["LibnloptLibrary"],
+		},
+		{
+			"name": "example",
+			"targetType": "executable",
+			"version": ["ExampleApp"],
+			"sourceFiles": ["example/example.d"],
+		}
+	],
+}
